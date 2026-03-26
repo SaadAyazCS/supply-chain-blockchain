@@ -62,7 +62,7 @@ All stakeholders can track product movement in a secure and transparent way.
 ---
 
 ## 👨‍💻 Authors
-- **Saad Ayaz**  
+- **Khawaja Saad Ayaz**  
 - Muhammad Saad Rafique  
 - Syed Yawar Abbas  
 
