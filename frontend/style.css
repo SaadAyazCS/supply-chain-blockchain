@@ -1,0 +1,235 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #00eaff;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #9fdfff;
+    font-size: 15px;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+.home {
+    max-width: 900px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0, 234, 255, 0.25);
+    border-radius: 14px;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    transition: 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(0, 234, 255, 0.8);
+    color: #00eaff;
+}
+
+/* =========================
+   FORM CONTAINERS
+========================= */
+.container,
+.form-box {
+    max-width: 650px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 234, 255, 0.25);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h2 {
+    text-align: center;
+    color: #00eaff;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.45);
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid rgba(0, 234, 255, 0.3);
+}
+
+input::placeholder {
+    color: #9fdfff;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+button,
+.btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #00eaff, #007bff);
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 18px rgba(0, 234, 255, 0.9);
+}
+
+/* =========================
+   MESSAGE / ALERT
+========================= */
+#message,
+.message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #00ffcc;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+    color: #00eaff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.form-box a,
+.container a {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+/* =========================
+   TIMELINE (BLOCKCHAIN VIEW)
+========================= */
+#timeline {
+    margin-top: 40px;
+    position: relative;
+    padding-left: 45px;
+}
+
+#timeline::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #00eaff, #007bff);
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+/* Dot */
+.timeline-item .dot {
+    position: absolute;
+    left: 10px;
+    top: 22px;
+    width: 18px;
+    height: 18px;
+    background: #00eaff;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #00eaff;
+}
+
+/* Block Content */
+.timeline-item .content {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 18px 20px;
+    border-radius: 10px;
+    margin-left: 40px;
+    border-left: 4px solid #00eaff;
+}
+
+.timeline-item h3 {
+    color: #00eaff;
+    margin-bottom: 8px;
+}
+
+.timeline-item p {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* Hash */
+.hash {
+    font-size: 11px;
+    word-break: break-all;
+    color: #9fdfff;
+    opacity: 0.85;
+}
+
+#verifyResult {
+    font-weight: bold;
+    margin-top: 15px;
+}

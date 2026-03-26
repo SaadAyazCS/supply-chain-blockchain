@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Track Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Track Product</h1>
+</header>
+
+<main class="form-box">
+    <input id="trackId" placeholder="Enter Product ID">
+
+    <button onclick="trackProduct()">Track</button>
+    <button onclick="verifyBlockchain()" style="margin-top:10px;">
+        🔐 Verify Blockchain
+    </button>
+
+    <p id="verifyResult" class="message"></p>
+
+    <div id="timeline"></div>
+
+    <a href="index.html">← Back to Home</a>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
